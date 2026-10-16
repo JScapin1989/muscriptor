@@ -79,4 +79,4 @@ COPY --from=web-builder /muscriptor/web_dist ./muscriptor/web_dist
 
 
 EXPOSE 8000
-ENTRYPOINT ["uv", "run", "muscriptor", "serve", "--host", "0.0.0.0"]
+ENTRYPOINT ["uv", "run", "muscriptor", "serve", "--host", "0.0.0.0", "--model", "small"]
